@@ -67,13 +67,21 @@ var zucchineCorte = [];
 
 var zucchineLunghe = [];
 
+sommaZucchineCorte = 0;
+sommaZucchineLunghe = 0;
+
 for ( var i = 0; i < zucchine.length; i++) {
     if ( zucchine[i].lunghezza < 15 ) {
         zucchineCorte.push(zucchine[i]);
+        sommaZucchineCorte += zucchine[i].peso;
+        
     } else  {
         zucchineLunghe.push(zucchine[i]);
+        sommaZucchineLunghe += zucchine[i].peso;
     }
 };
 
 console.log(zucchineCorte);
+console.log(`Il peso totale è :  ${sommaZucchineCorte}`;
 console.log(zucchineLunghe);
+console.log(`Il peso totale è : ${sommaZucchineLunghe};
