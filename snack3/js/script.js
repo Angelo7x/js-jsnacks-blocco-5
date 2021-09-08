@@ -4,7 +4,7 @@ function girala(parola) {
 
     var contrario = "";
 
-    for ( var i = 0 ; i < parola.lenght; i-- ) {
+    for ( var i = parola.length -1; i  >= 0; i-- ) {
 
         contrario += parola[i];
     }
@@ -14,4 +14,4 @@ function girala(parola) {
 
 var parolaGirata = girala(parola);
 
-console.log (parolaGirata);
+alert(parolaGirata);
