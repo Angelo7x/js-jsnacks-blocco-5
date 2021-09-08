@@ -62,3 +62,11 @@ var zucchine =
 
 ];
 
+var sommaPeso = 0;
+for ( var i = 0; i < zucchine.length; i++) {
+    sommaPeso += zucchine[i].peso;
+}
+
+console.log(sommaPeso);
+
+
